@@ -6,6 +6,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/jsx-runtime',
+    'plugin:@next/next/recommended',
     'prettier'
   ], // prettier must be the last one
   parser: '@typescript-eslint/parser',
@@ -16,7 +17,7 @@ module.exports = {
     },
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'import', 'prettier', 'vitest'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'import', 'prettier'],
   env: {
     browser: true,
     node: true,
@@ -281,16 +282,6 @@ module.exports = {
 
     // Prettier
     'prettier/prettier': ['error', prettierConfig],
-
-    // Vitest
-    'vitest/consistent-test-it': ['error', { fn: 'test' }],
-    'vitest/expect-expect': 'error',
-    'vitest/lower-case-title': 'warn',
-    'vitest/max-nested-describe': ['error', { max: 3 }],
-    'vitest/no-conditional-tests': 'error',
-    'vitest/no-focused-tests': 'warn',
-    'vitest/no-identical-title': 'error',
-    'vitest/no-skipped-tests': 'error',
 
     // Custom rules
     'no-restricted-imports': [
